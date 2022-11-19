@@ -2,8 +2,23 @@
     margin: 0px;
     padding: 0px;
 }
+
+/* here starts the navbar  */
+
 .navbar{
     margin: 10px;
     padding: 10px;
     display: flex;
+    justify-content: space-between;
+    height: 50px;
 }
+.navbar>ul{
+    list-style: none;
+    display: flex;
+}
+.navbar>ul>li {
+    padding: 9%;
+}
+
+/* navbar button  */
+
