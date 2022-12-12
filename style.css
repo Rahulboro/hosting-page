@@ -1,16 +1,23 @@
 * {
     margin: 0px;
     padding: 0px;
+    background-color: rgb(71, 68, 68);
 }
 
-/* here starts the navbar  */
+/* here starts the navbar  */ 
+.logohere>img{
+    width: 100px;
+    margin-top: 18px;
+    margin-left: 12px;
+
+}
 
 .navbar{
-    margin: 10px;
+    margin: 20px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    height: 50px;
+    height: 70px;
 }
 .navbar>ul{
     list-style: none;
@@ -18,7 +25,42 @@
 }
 .navbar>ul>li {
     padding: 9%;
+    font-size: 17px;
 }
 
 /* navbar button  */
+.navbar .buttonone {
+    display: inline-block;
+    padding: 0px 35px;
+    border: 2px outset #52a9f5;
+    cursor:pointer;
+    color: #5196d2;
+    border-radius: 0.6em;
+    font-size: 16px;
+    margin-top: 10px;
 
+}
+
+/* end of the Navbar  */
+
+.sectionone{
+    float: left;
+    height: 450px;
+    width: 600px;
+    margin-left: 40px;
+    margin-top: 120px;
+
+}
+.sectionone>h1{
+    font-size: 50px;
+}
+.sectionone>p{
+    margin-top: 50px;
+    font-size: 18px;
+}
+.secbutton1{
+    position: relative;
+    top: 500px; left: -560px;
+    padding: 16px 35px;
+    border-radius: .6em;
+}
