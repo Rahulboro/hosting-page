@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
     background-color: rgb(71, 68, 68);
 }
 
@@ -13,11 +14,11 @@
 }
 
 .navbar{
-    margin: 20px;
-    padding: 10px;
     display: flex;
     justify-content: space-between;
-    height: 70px;
+    padding: 0vh 4vh;
+    height: 10%;
+    width: 100%;
 }
 .navbar>ul{
     list-style: none;
@@ -44,7 +45,7 @@
 /* end of the Navbar  */
 
 /*SectionOne starts  */
-
+/* 
 .sectionone{
     float: left;
     height: 450px;
@@ -68,16 +69,16 @@
     top: 400px; left: -500px;
     padding: 16px 35px;
     border-radius: .6em;
-}
+} */
 /* section two starts  */
-
+/* 
 .sectiontwo{
     margin-top: 50px;
 }
 .sectiontwo>img{
     margin-left: -600px;
     display: inline;
-}
+} */
 /* .sectiontwo>h2{
     float: right;
     font-size: 35px;
@@ -85,8 +86,13 @@
     margin-top: 30px;
     font-weight: 800;
 } */
-.sectiontwo>h2,p {
-    float: right;
-}
+/* .sectiontwo>h2,p { */
+    /* float: right; */
+/* } */
 /* here starts section three  */
-
+.horizontalslides{
+    height: 100vh;
+    width: 100%;
+    padding: 3vh 15vh;
+    justify-content: space-around;
+}
