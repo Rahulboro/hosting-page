@@ -2,97 +2,444 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: rgb(71, 68, 68);
+    font-family: montserrat;
 }
 
+p{
+    color: grey;
+}
 /* here starts the navbar  */ 
 .logohere>img{
     width: 100px;
-    margin-top: 18px;
-    margin-left: 12px;
-
 }
 
 .navbar{
+    margin-top: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     padding: 0vh 4vh;
     height: 10%;
     width: 100%;
 }
 .navbar>ul{
-    list-style: none;
     display: flex;
+    list-style: none;
 }
 .navbar>ul>li {
-    padding: 9%;
-    font-size: 17px;
+    margin-right: 17%;
+    margin-top: 5%;
+    color: gray;
 }
 
+.navbar>ul>li:hover{
+    color:black;
+    cursor:pointer;
+}
 /* navbar button  */
 .navbar .buttonone {
-    display: inline-block;
-    padding: 0px 35px;
-    border: 2px outset #52a9f5;
     cursor:pointer;
+    border: 2px outset #52a9f5; 
+    padding: 15px 30px;
     color: #5196d2;
     border-radius: 0.6em;
-    font-size: 16px;
-    margin-top: 10px;
-
 }
 
 /* end of the Navbar  */
 
 /*SectionOne starts  */
-/* 
+
+.horizontalslides{
+    height: 800px;
+    width: 100%;
+    padding: 5% 2%;
+    display: flex;
+    gap: 10px;
+}
 .sectionone{
-    float: left;
-    height: 450px;
-    width: 600px;
-    margin-left: 40px;
-    margin-top: 120px;
+    margin-top: 60px;
+    width: 60%;
+}
+.sectionone h1{
+    font-size: 3.2em;
+    font-weight: bold;
+}
+.sectionone p{
+    margin-top: 6%;
+    text-align:left;
+}
+.horizontalslides>button{
+    position: absolute;
+    top: 530px; left: 30px;
+    padding: 1.1% 2.4% 1.1% 2.4% ;
+    border-radius: .6em;
+    background: linear-gradient(to right, #b2c9e0, #1996f5);
+}
+.horizontalslides>img{
+    width: 50%;
+}
+
+/* section two starts here  */
+
+.sectiontwo{
+    display: flex;
+    margin: 20px 40px;
 
 }
-.sectionone>h1{
-    font-size: 50px;
-}
-.sectionone>p{
-    margin-top: 50px;
-    font-size: 18px;
-    font-style: inherit;
-    line-height: 30px;
-    width: 400px;
-}
-.secbutton1{
-    position: relative;
-    top: 400px; left: -500px;
-    padding: 16px 35px;
-    border-radius: .6em;
-} */
-/* section two starts  */
-/* 
-.sectiontwo{
+.sectionTwoColumn{
+    margin-left: 90px;
     margin-top: 50px;
 }
 .sectiontwo>img{
-    margin-left: -600px;
-    display: inline;
-} */
-/* .sectiontwo>h2{
-    float: right;
-    font-size: 35px;
-    margin-right: 190px;
-    margin-top: 30px;
-    font-weight: 800;
-} */
-/* .sectiontwo>h2,p { */
-    /* float: right; */
-/* } */
-/* here starts section three  */
-.horizontalslides{
-    height: 100vh;
-    width: 100%;
-    padding: 3vh 15vh;
+    width:70%;
+}
+.sectionTwoColumn>h2{
+    font-size:50px ;
+}
+.sectionTwoColumn>p{
+    margin-top: 40px;
+    text-align:justify;
+}
+.sectionTwoColumn>button{
+    margin-top: 50px;
+    padding: 15px 50px;
+    border-radius: .6em;
+}
+
+/* section two Ends Here  */
+
+/* section three starts here  */
+
+
+.sectionthree{
+    display: flex;
     justify-content: space-around;
+    height: 100vh;
+}
+.sectionThreeColumn{
+    margin-top: 250px;
+    height: 100vh;
+    width: 600px;
+}
+.sectionThreeColumn>h2{
+    font-size: 60px;
+}
+.sectionThreeColumn>p{
+    margin-top: 20px;
+    line-height: 30px;
+    font-size: 20px;
+}
+.sectionthree>img{
+    width: 600px;
+}
+.sectionThreeColumn>button{
+    margin-top: 25px;
+        padding: 15px 40px;
+        border-radius: .6em;
+}
+
+/* End of section three  */
+
+
+
+
+
+/* here starts the section four  */
+.sectionfour{
+    height: 30vh;
+    display: flex;
+    margin-left: 50px;
+
+}
+.sectionfour>h1{
+    font-size: 60px;
+}
+.sectionfour>p{
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 35px;
+    text-align:left;
+}
+
+/* End of the section slides  */
+
+/* here starts the top card section  */
+
+.topcard{
+    display: flex;
+    height: 300px;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 110px;
+}
+.cardone>h1, .cardtwo>h1, .cardthree>h1{
+    width: 300px;
+    padding-top: 30px;
+}
+.cardone>p, .cardtwo>p, .cardthree>p{
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+
+/* here starts the bottom card section  */
+.cardbottom{
+    display: flex;
+    height: 300px;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 110px;
+}
+.cardfour>h1, .cardfive>h1, .cardsix>h1 {
+    width: 300px;
+    padding-top: 30px;
+}
+.cardfour>p, .cardfive>p, .cardsix>p{
+    padding-top: 20px;
+    line-height: 30px;
+}
+/* end of bottom card  */
+
+
+/* starts the pricing section  */
+
+
+.price_plans{
+    background: linear-gradient(to right, #b2c9e0, #1996f5);
+    padding: 3%;
+    margin-top: 10%;
+}
+.headline{
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+    font-size: 220%;
+    color: #fff;
+}
+.plans{
+    display:flex;
+    justify-content: space-around;
+    height: 80vh;
+}
+.plan{
+    list-style: none;
+    border-radius: .9em;
+    width: 25%;
+    background-color: #fff;
+}
+li{
+    list-style: none;
+    line-height: 200%;
+    margin-top: 10%;
+
+}
+
+.plan_title{
+    background-color:aliceblue;
+    padding: 6%;
+    border-radius: .9em;
+}
+.plan_title>article{
+    font-size: 1em;
+    margin-top: 14%;
+}
+.facility{
+    height:50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+.plan .facility ul li::before{
+    content: "\2713";
+    height: 17px;
+    width: 18px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: green;
+    font-weight: bolder;
+    margin-right: 10px;
+}
+.plan-title_one{
+    background-color: rgb(42, 41, 41);
+    color: #c2ddf2;
+    padding: 5%;
+    font-size: 150%;
+    border-radius: 0em 0em .5em .9em;
+}
+.priceing{
+    height: 30%;
+    background-color:#fff;
+}
+.priceing h2, .priceing p {
+    display: flex;
+    justify-content: center;
+}
+.priceing h2 {
+    font-size: 2em;
+}
+.priceing p {
+    font-size: 1em;
+    margin-top: 5%;
+}
+.priceing button{
+    margin-top: 8%;
+    padding: 5% 12% 5% 12%;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    border-radius: .9em;
+    border: 2px solid  #5196d2;
+    color: #5196d2;
+}
+.priceing button:hover{
+    background: linear-gradient(to right, #b2c9e0, #1996f5);
+    color: #fff;
+    cursor: pointer;
+    border-color: #c2ddf2;
+}
+
+
+
+/* customer feedback  */
+
+
+
+
+.customer-section {
+    margin-top: 9%;
+}
+.customer-section h1 {
+    font-size: 300%;
+    text-align: center;
+    color: #14263f;
+}
+.customer-section p {
+    text-align: center;
+    padding: 3%;
+    color:grey;
+    font-weight: 500;
+}
+.customer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+}
+.customer-card {
+    padding: 2%;
+    width: 40%;
+    border: 1px solid rgb(222, 219, 219);
+    border-radius: 8px;
+    height: 320px;
+}
+.customer-card p {
+    line-height: 27px;
+    text-align: left;
+    color: grey;
+    font-size: 15px;
+}
+.customer-info {
+    display: flex;
+    gap: 30px;
+}
+.customer-info .info h3 {
+    margin-top: 10px;
+    font-size: 15px;
+    color: black;
+}
+.customer-info .info p {
+    margin-top: 7px;
+    font-size: 14px;
+}
+
+
+/* footer wrapper */
+
+.footer-wrapper {
+    background-image: url('./assets/footer-bg.svg');
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    height: 45vh;
+    margin-top: 160px;
+}
+.footer-container {
+    height: 100vh;
+    max-width: 76rem;
+    margin: 0 auto;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    align-items: center;
+    height: 44vh;
+    justify-content: space-between;
+}
+.footer .footer-left h1 {
+    font-size: 2.7rem;
+}
+ .footer .footer-left p {
+    margin-top: 28px;
+    color: #b2c9e0;
+}
+.footer-right button {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1.4px solid #FFFFFF;
+    padding: 15px 40px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+.bottom-footer {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+ .logo-container {
+    flex: 1.2;
+}
+ .logo-container img {
+    width: 100px;
+}
+ .logo-container p {
+    padding-top: 20px;
+    color: grey;
+}
+ .footer-navbar {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+}
+ .footer-navbar div ul {
+    list-style-type: none;
+}
+ .footer-navbar div h5 {
+    padding-bottom: 20px;
+    font-size: 1.4rem;
+    color:black;
+}
+ .footer-navbar div ul li {
+    list-style-type: none;
+    padding-bottom: 20px;
+    color: grey;
+    font-size: 14px;
+}
+ .footer-navbar div:last-child ul {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+ .footer-navbar div:last-child h5 {
+    text-align: center;
+}
+ .footer-navbar div:last-child ul li img {
+    width: 36px;
 }
